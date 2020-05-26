@@ -269,13 +269,13 @@
             <div class="container ">
                 <div class="row ">
                     <div class="col-lg-12 ">
-                        <h3 class="text-center text-white mt-5 fon animation-bive ">WHO WE ARE</h3>
+                        <h3 class="text-center text-white mt-5 fon animation-earth-head ">WHO WE ARE</h3>
 
                     </div>
                 </div>
                 <div class="row main-h ">
 
-                    <div class="col-md-7 text-white med-han animation-bive-text ">
+                    <div class="col-md-7 text-white med-han animation-earth-text ">
                         <h3 class="text-white ">Suponic global aims to provide profitable experience in E-sports industry by providing a decentralized and trustful environment powered by blockchain. </h3>
                         <br>
                         <ul class="bul ">
@@ -292,7 +292,7 @@
                         </ul>
 
                     </div>
-                    <div class="col-md-5 handsfree-pic animation-bive-pic ">
+                    <div class="col-md-5 handsfree-pic animation-earth-pic ">
                         <img class="hands " src="earth_img.png " /> </div>
                 </div>
             </div>
@@ -302,7 +302,7 @@
         <div class="container coin-sec ">
             <div class="row ">
                 <div class="col-lg-12 ">
-                    <h3 class="text-center mt-5 fon mb-5 game-animation ">SUPONIC GAME CREDIT (SGC)
+                    <h3 class="text-center mt-5 fon mb-5 animation-earth-head1 ">SUPONIC GAME CREDIT (SGC)
                     </h3>
                 </div>
             </div>
@@ -311,7 +311,7 @@
             </div>
             <div class=" row coin-text ">
 
-                <div class="col-md-4 game-animation-left " style="margin-top:30px; ">
+                <div class="col-md-4 animation-earth-text1 " style="margin-top:30px; ">
                     <div class="col-md-12 border-centr-img " style="font-size:.85rem">SGC stands for Suponic Game Credit, backed by blockchain technology, which is our very first game platform token and a successful application of our blockchain solutions in game industry.
                         <br>
                         </br>Among the countries that supports crypto currencies, SGC can be used to purchase tickets and participate for esports tournaments, competitions, bootcamps, and can be used to purchase all derivatives, in-app items and skins
@@ -320,10 +320,10 @@
 
                     </div>
                 </div>
-                <div class="col-md-4 game-animation-center ">
+                <div class="col-md-4 animation-earth-text ">
                     <div class="col-md-12 "> <img class="sgc-img img-fluid " src="sgc_coin.png " /> </div>
                 </div>
-                <div class="col-md-4 game-animation-right " style="margin-top:30px;padding-left:5px; ">
+                <div class="col-md-4 animation-earth-text " style="margin-top:30px;padding-left:5px; ">
                     <div class="col-md-12 border-centr-img "> Gamers who owns SGC or obtained from the games can take their SGC to trade in Exchange.
                         <br>
                         </br>professional gamers can make millions<br> The value created by the SGC is an unprecedented breakthrough in the global game and cryptocurrency industries.
@@ -508,6 +508,22 @@
                     $('.about2').addClass('animated pulse');
                     $('.about3').addClass('animated pulse');
                 }
+
+                if (positionTop > 1050) {
+                    $('.animation-earth-head').addClass('animated pulse');
+                }
+                if (positionTop > 1100) {
+                    $('.animation-earth-text').addClass('animated pulse');
+                    $('.animation-earth-pic').addClass('animated pulse');
+                }
+                if (positionTop > 1800) {
+                    $('.animation-earth-head1').addClass('animated pulse');
+                }
+                if (positionTop > 1850) {
+                    $('.animation-earth-text1').addClass('animated pulse');
+                    $('.animation-earth-pic1').addClass('animated pulse');
+                }
+
                 if (positionTop > 2500) {
                     $('.animation-bive').addClass('animated pulse');
                 }
