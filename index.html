@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Site made with Mobirise Website Builder v4.10.4, https://mobirise.com -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="generator" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <link rel="shortcut icon" href="suponic_ico.png" type="image/x-icon">
+    <meta name="description" content="">
+    <title>Suponic</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-grid.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+    </script>
+    <!-- <script src="nav.js">
+    </script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <style>
+        /* .nav-link {
+            border: none;
+            outline: none;
+            padding: 10px 16px;
+            cursor: pointer;
+            font-size: 18px;
+        } */
+        /* Style the active class, and buttons on mouse-over */
+        /* .active,
+        .nav-link:hover {
+            color: white
+        } */
+        
+        .back {
+            background-image: url("main_banner.png");
+            background-repeat: no-repeat, repeat;
+            background-size: cover;
+            background-position: center;
+            height: 700px;
+            position: relative;
+        }
+        
+        .hero-text {
+            text-align: center;
+            position: absolute;
+            top: 80%;
+            left: 50%;
+            width: 100%;
+            transform: translate(-50%, -50%);
+            color: white;
+        }
+        
+        input {
+            border: 0 !important;
+            outline: 0 !important;
+            background: transparent !important;
+            border-bottom: 2px solid grey !important;
+            border-radius: 0px !important;
+            width: 100%;
+            padding: 8px;
+        }
+        
+         :focus {
+            outline: none !important;
+        }
+        
+        .frm {
+            margin-bottom: 50px;
+        }
+        
+        .join-btn {
+            background-color: #0b0b2c;
+            color: white;
+            padding: 10px 34px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            margin-right: 13px;
+            border: 1px solid lightgrey;
+        }
+        
+        .login-btn {
+            background-color: #29298a;
+            color: white;
+            padding: 10px 49px;
+            text-align: center;
+            text-decoration: none;
+            border: 1px solid lightgrey;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            margin-left: 13px;
+        }
+        
+        .for-flex {
+            display: flex;
+            flex-wrap: nowrap;
+        }
+        
+        .hi {
+            padding-bottom: 20px;
+            /* width: 90%; */
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        //navbar code //
+        $('.navbar-nav .nav-link').click(function() {
+                $('.navbar-nav .nav-link').removeClass('active');
+                $(this).addClass('active');
+            })
+            //slider code//
+        $(document).ready(function() {
+            $('.main').slick({
+                dots: false,
+                arrows: false,
+                infinite: false,
+                speed: 300,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                responsive: [{
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 3,
+                            infinite: true,
+                            dots: true
+                        }
+                    }, {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2
+                        }
+                    }, {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                    // You can unslick at a given breakpoint now by adding:
+                    // settings: "unslick"
+                    // instead of a settings object
+                ]
+            });
+
+        });
+    </script>
+</head>
+
+<body>
+    <!-- Header and Navigation -->
+    <div class="back">
+        <nav class="navbar navbar-expand-lg navbar-dark  static-top ">
+            <div class="container-fluid ">
+                <div class="col-md-1"></div>
+                <a class="navbar-brand" href="index.html">
+                    <img src="suponic_global_logo.png" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse text-white" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item ">
+                            <a class="nav-link " href="about.html ">about</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="# ">what we are</a>
+                        </li>
+                        <li class="nav-item  ">
+                            <a class="nav-link active" href="index.html">sgc 
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="terms.html ">what do we do</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="col-md-1 "></div>
+
+        </nav>
+        <div class="row">
+            <div class="col-md-11 text-right" style="color:#8f91c2;padding-right:49px;">Login</div>
+            <div class="col-md-1"></div>
+        </div>
+
+        <div class=" row ">
+            <div class="hero-text text-white ">
+                <h1 class="suponic animated bounceInLeft ">SUPONIC</h1>
+                <!-- <button type="button " style="background-color: #fff; " class="btn ">Join Now</button>
+            <button type="button " style="background-color: #fff;border-radius:0px; " class="btn ">Login</button> -->
+                <p style="font-size:18px; ">A simple money making method: playing games. We think we made it!</p>
+                <p style="font-size:18px; ">A Blockchain platform for games.
+                </p>
+
+            </div>
+        </div>
+        </div>
+        <!-- end header-->
+        <!--start about us section-->
+        <div class="about ">
+            <div class="container ">
+                <div class="row ">
+                    <div class="col-lg-12 ">
+                        <h3 class="text-center text-white mt-5 fon animation-about-us ">ABOUT US</h3>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="row rel ">
+                    <div class="col-md-4 mb-5 ">
+                        <div class="col-md-12 hi icon " style=" padding-bottom:70px "> <img class=" abt rounded mx-auto d-block " style="margin-bottom:15px; " src="icon_1.png ">
+                            <p class="text-center ">
+                                <b>Game changer in the game industry</b></br>
+                                Many games have a form of currency within the game where players can earn, purchase, and spend within the game. The rise of gaming combined with the increased popularity of cryptocurrencies
+                            </p>
+                        </div>
+                    </div>
+                    <!-- /.col-md-4 -->
+                    <div class="col-md-4 mb-5 ">
+                        <div class="col-md-12 hi icon "> <img class=" abt rounded mx-auto d-block " src="icon_2.png ">
+                            <p class="text-center ">
+                                The perfect mix for the tokenization of game assets. By using blockchain technology, gaming assets can be not only bought, sold, or traded outside of the game but can be actually owned by the player. We provide solutions to create game platforms and trading
+                                platforms for game “points” for real money.
+                            </p>
+
+                        </div>
+                    </div>
+                    <!-- /.col-md-4 -->
+                    <div class="col-md-4 mb-5 ">
+                        <div class="col-md-12 hi icon " style=" padding-bottom:65px ">
+                            <img class=" abt rounded mx-auto d-block " src="icon_2.png ">
+                            <p class="text-center ">
+                                <b>Plug in for Gaming cryptos and digital asset trading platform available to 3rd parties
+                            </b> We provide innovative blockchain and crypto solutions to from large-scale games companies, small to medium size game studios and even to solo games. </p>
+                        </div>
+                    </div>
+                    <!-- /.col-md-4 -->
+
+                </div>
+                <!-- /.row -->
+            </div>
+
+        </div>
+        <!--end about us-->
+        <!--start GARION DEEP BIVE-->
+        <div class="hands-sec ">
+            <div class="container ">
+                <div class="row ">
+                    <div class="col-lg-12 ">
+                        <h3 class="text-center text-white mt-5 fon animation-bive ">WHO WE ARE</h3>
+
+                    </div>
+                </div>
+                <div class="row main-h ">
+
+                    <div class="col-md-7 text-white med-han animation-bive-text ">
+                        <h3 class="text-white ">Suponic global aims to provide profitable experience in E-sports industry by providing a decentralized and trustful environment powered by blockchain. </h3>
+                        <br>
+                        <ul class="bul ">
+
+
+                            <li style="font-size:1rem ">Suponic global is a global platform that allows game lovers, game developers, game publishers and blockchain techs, and crypto lovers to be united together with true fun, exiting, and profiting experience powered by blockchain
+                                technology.
+                            </li>
+                            <li style="font-size:1rem ">We are an innovative tech company embracing and integrating cutting-edge technologies to provide solutions and standards in E-sports industry.
+                            </li>
+                            <li style="font-size:1rem ">We are a community and hub for tech and creative talents all over the world to provide not only fun and entertaining experience to their players but also a better way to gain real money through playing games.
+                            </li>
+
+                        </ul>
+
+                    </div>
+                    <div class="col-md-5 handsfree-pic animation-bive-pic ">
+                        <img class="hands " src="earth_img.png " /> </div>
+                </div>
+            </div>
+        </div>
+        <!-- end GARION DEEP BIVE-->
+        <!--start suponic game coin-->
+        <div class="container coin-sec ">
+            <div class="row ">
+                <div class="col-lg-12 ">
+                    <h3 class="text-center mt-5 fon mb-5 game-animation ">SUPONIC GAME CREDIT (SGC)
+                    </h3>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-md-12 text-center border-index "> <img src="doted_lines.png "> </div>
+            </div>
+            <div class=" row coin-text ">
+
+                <div class="col-md-4 game-animation-left " style="margin-top:30px; ">
+                    <div class="col-md-12 border-centr-img ">SGC stands for Suponic Game Credit, backed by blockchain technology, which is our very first game platform token and a successful application of our blockchain solutions in game industry.
+                        <br>
+                        </br>Among the countries that supports crypto currencies, SGC can be used to purchase tickets and participate for esports tournaments, competitions, bootcamps, and can be used to purchase all derivatives, in-app items and skins
+                        which enhance gamers’ experience, and products associated with esports and games.
+
+
+                    </div>
+                </div>
+                <div class="col-md-4 game-animation-center ">
+                    <div class="col-md-12 "> <img class="sgc-img img-fluid " src="sgc_coin.png " /> </div>
+                </div>
+                <div class="col-md-4 game-animation-right " style="margin-top:30px;padding-left:5px; ">
+                    <div class="col-md-12 border-centr-img "> Gamers who owns SGC or obtained from the games can take their SGC to trade in Exchange.
+                        <br>
+                        </br>professional gamers can make millions<br> The value created by the SGC is an unprecedented breakthrough in the global game and cryptocurrency industries.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hands-sec ">
+            <div class="container ">
+                <div class="row ">
+                    <div class="col-lg-12 ">
+                        <h3 class="text-center text-white mt-5 fon animation-bive ">WHO WE ARE</h3>
+
+                    </div>
+                </div>
+                <div class="row main-h ">
+
+                    <div class="col-md-5 text-white ali animation-bive-text ">
+
+                        <br>
+                        <p> We connects 10 trillion market gaming market to you, the gamers.
+                        </p>
+                        <p>With our solutions, it is possible for every game to have a potential market for buying and selling their "points” in the gaming market, which may leave gamers making real money by buying and trading. </p>
+                        <p>Suponic global offers decentralized blockchain technology which complements with an amerging electronic sports (E-sports) industry that let’s professional and experienced gamers compete in popular video games with real money at
+                            stake by perfecting their skills in a trust environment.
+
+                        </p>
+                        <p>The gaming industry is now worth more than $10 trillion, and it's growing year by year.
+
+                        </p>
+
+                    </div>
+                    <div class="col-md-2  bar-res ">
+                        <img class=" " src="right_line.png " /> </div>
+
+                    <div class="col-md-5  handsfree-pic animation-bive-pic ">
+                        <img class="hands " src="spinwheel.png " /> </div>
+                </div>
+            </div>
+        </div>
+        <div class="hands-sec ">
+            <div class="container ">
+                <div class="row ">
+                    <div class="col-lg-12 ">
+                        <h3 class="text-center text-white mt-5 fon animation-bive ">WHO WE ARE</h3>
+
+                    </div>
+                </div>
+                <div class="row main-h ">
+                    <div class="col-md-4  handsfree-pic animation-bive-pic ">
+                        <img class="hands2 " src="chipsmoney.png " /> </div>
+                    <div class="col-md-3   bar-res">
+                        <img class=" " src="left_line.png " /> </div>
+                    <div class="col-md-5 text-white ali animation-bive-text ">
+
+
+
+                        <p> Creating trust in the game community with encryption technology.We are the very first gaming company providing solutions and standard in crypto gaming industry.
+
+
+                        </p>
+                        <p>We are able to set standards across the gaming industry, paving the way for a new set of ideas and rules for managing the gaming community by adopting Suponic Protocol
+                        </p>
+                        <p>Suponic Protocol aims to setup the global standards in crypto game world, providing core base for the regulations and the development procedures for the game developers, analysts, designers, artists, publishers, and other participants
+                            in the industry. The goal is to establish an environment where eSports industry can flourish and where gamers and game developers can enjoy the convenience of the platform. After the endless endeavor to establish the protocol,
+                            the World eSports and Blockchain Association (WESBA) has officially recognized Suponic Protocol, and now we are contributing to invigorate the crypto game industry by providing open source API.
+
+                        </p>
+
+
+
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+        <div class="hands-sec ">
+            <div class="container ">
+                <div class="row ">
+                    <div class="col-lg-12 ">
+                        <h3 class="text-center text-white mt-5 fon animation-bive ">WHO WE ARE</h3>
+
+                    </div>
+                </div>
+                <div class="row main-h ">
+
+                    <div class="col-md-5 text-white ali animation-bive-text ">
+
+                        <p>Gamers will be immediately motivated to play the game more seriously, attracting millions of new players trying to earn their fortunes to join the game.
+
+                        </p>
+                        <p>Extra skins, new champions and enhance the experience.
+
+                        </p>
+                        <p>Suponic Global is a new decentralized hub that links to all toxic games, family fun games all over the world by providing open source API.
+
+                        </p>
+
+                    </div>
+                    <div class="col-md-2   bar-res">
+                        <img class=" " src="right_line.png " /> </div>
+
+                    <div class="col-md-5  handsfree-pic animation-bive-pic text-center" style="padding-bottom:35px;">
+                        <img class="hands3" src="gamemachine.png " /> </div>
+                </div>
+            </div>
+        </div>
+        <!-- start contact us-->
+        <div class="container ">
+            <div class="row " style="margin-bottom:70px; ">
+                <div class="col-lg-12 ">
+                    <h3 class="text-center mt-5 fon contact-animation ">CONTACT US</h3>
+
+                </div>
+
+            </div>
+            <form action="/action_page.php " class="form-animation ">
+                <div class="row frm ">
+                    <div class="col-md-1 "></div>
+                    <div class="form-group col-lg-5 col-sm-5 " style="width:100% ">
+                        <input type="text " class="form-control " id="name " placeholder="Name " name="name ">
+                    </div>
+                    <div class="form-group col-lg-5 col-sm-5 ">
+                        <input type="email " class="form-control mail " placeholder="Email " name="email ">
+                    </div>
+                    <div class="col-md-1 "></div>
+                </div>
+                <div class="row frm ">
+                    <div class="col-md-1 "></div>
+                    <div class="form-group col-md-10 col-sm-10 ">
+
+                        <input type="email " class="form-control " placeholder="Subject " id="email ">
+                    </div>
+                    <div class="col-md-1 "></div>
+                </div>
+                <div class="row frm ">
+                    <div class="col-md-1 "></div>
+                    <div class="form-group col-md-10 col-sm-10 ">
+
+                        <input type="text " class="form-control " placeholder="Message " id="pwd ">
+                    </div>
+                </div>
+                <div class="form-row ">
+                    <div class="col-md-5 "></div>
+                    <div class="col-md-2 ">
+                        <button type="submit " style=" background-color: black; /* Green */ border: none; color: white; padding: 15px 32px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer;
+                " class=" btn-block ">SEND</button></div>
+                </div>
+        </div>
+
+        </form>
+    </div>
+    <!-- end contact us-->
+    <div class="container-fluid small_footer " style="margin-top:80px; ">
+        <h6 class=" my-auto ">All right reserved to suponic global 2020</h6>
+    </div>
+
+
+    <script type="text/javascript ">
+        $(document).ready(function() {
+            $(window).scroll(function() {
+                var positionTop = $(document).scrollTop();
+                console.log(positionTop);
+
+                // if (positionTop > 250) {
+                //     $('.bon').addClass('animated ');
+                // }
+                if (positionTop > 480) {
+                    $('.animation-about-us').addClass('animated bounceInLeft');
+                }
+
+                if (positionTop > 580) {
+                    $('.about-1').addClass('animated bounceInLeft');
+                    $('.about-2').addClass('animated bounceInDown');
+                    $('.about-3').addClass('animated bounceInRight');
+                }
+                if (positionTop > 1030) {
+                    $('.animation-bive').addClass('animated bounceInUp');
+                }
+                if (positionTop > 1100) {
+                    $('.animation-bive-text').addClass('animated bounceInLeft');
+                    $('.animation-bive-pic').addClass('animated bounceInRight');
+                }
+                if (positionTop > 1450) {
+                    $('.game-animation').addClass('animated bounceInDown');
+                }
+                if (positionTop > 1650) {
+                    $('.game-animation-left').addClass('animated bounceInLeft');
+                    $('.game-animation-center').addClass('animated bounceIn');
+                    $('.game-animation-right').addClass('animated bounceInRight');
+                }
+                if (positionTop > 2150) {
+                    $('.video-animation').addClass('animated bounceInDown');
+                }
+                if (positionTop > 2350) {
+                    $('.vid-animation-1').addClass('animated bounceInLeft');
+                    $('.vid-animation-2').addClass('animated bounceIn');
+                    $('.vid-animation-3').addClass('animated bounceInRight');
+                }
+                if (positionTop > 2760) {
+                    $('.exchange-animation').addClass('animated bounceInDown');
+                }
+                if (positionTop > 3100) {
+                    $('.exchange-animation-1').addClass('animated bounceInLeft');
+                    $('.exchange-animation-2').addClass('animated bounceIn');
+                    $('.exchange-animation-3').addClass('animated bounceInRight');
+                }
+                if (positionTop > 3420) {
+                    $('.slider-animation').addClass('animated bounceInUp');
+                }
+                if (positionTop > 3520) {
+                    $('.slider-animation-font').addClass('animated bounceInDown');
+                }
+                if (positionTop > 3640) {
+                    $('.slider-animation-slide').addClass('animated bounceIn');
+                }
+                if (positionTop > 4000) {
+                    $('.slider-animation-left').addClass('animated bounceInLeft');
+                    $('.slider-animation-right').addClass('animated bounceInRight');
+                }
+                if (positionTop > 4220) {
+                    $('.contact-animation').addClass('animated fadeInDown');
+                }
+                if (positionTop > 4320) {
+                    $('.form-animation').addClass('animated fadeInUp');
+
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
+
+</html>
+
+</html>
+
+</html>
