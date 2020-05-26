@@ -438,7 +438,7 @@ ul.bul {
         text-align: center;
     }
     .bar-res {
-        text-align: center;
+        display: none;
     }
     .hands {
         width: 50%;
@@ -510,7 +510,7 @@ ul.bul {
         margin-left: -55px;
     }
     .sgc-img {
-        width: 55%;
+        width: 100%;
     }
     .play-btn {
         height: 1200px;
