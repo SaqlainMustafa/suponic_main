@@ -475,6 +475,9 @@ ul.bul {
     .list {
         text-align: center;
     }
+    .animation-bive2-pic {
+        margin-top: 50px;
+    }
 }
 
 @media (max-width: 640px) and (min-width:480px) {}
